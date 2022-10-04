@@ -5,24 +5,18 @@ def prenderServer():
   
     s = socket( AF_INET, SOCK_STREAM) 
     print("Socket creado exitosamente") 
-        
-    
+            
     port = 8000
     direccionServidor = "localhost"
   
     s.bind((direccionServidor, port)) 
-       
     
     s.listen(5)       
     print("Socket escuchando...") 
-        
-    
+          
     while True:  
-        
-       
+               
        connection, address = s.accept()       
-       print('Servidor conectado a', address)
-
        print('Servidor conectado a', address)
        
        hora = datetime.now()

@@ -1,6 +1,5 @@
-from datetime import datetime
+from datetime import *
 from socket import *
-
 import time
 import datetime
 
@@ -32,5 +31,6 @@ print("El tiempo de ida: ", mitadTiempo)
 
 print("Hora servidor: ", hora_cadena)
 print("La hora exacta es : ", hora + datetime.timedelta(seconds=mitadTiempo))
+time.sleep(5)
 
 socketCliente.close()
